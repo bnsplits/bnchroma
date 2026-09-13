@@ -1,6 +1,6 @@
 # bnchroma
 
-_Theme your apps from your wallpaper with one command_
+Theme your apps from your wallpaper with one command
 
 - Grabs 8 colors from any wallpaper.
 - Builds a smooth 16-color gradient from the one you pick.

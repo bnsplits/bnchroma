@@ -418,6 +418,38 @@ pub fn get_default_config_path() -> Result<PathBuf> {
     Ok(home.join("bnchroma/config.toml"))
 }
 
+pub fn default_template_path() -> Result<PathBuf> {
+    let home = dirs::config_dir().context("Could not find config directory")?;
+    Ok(home.join("bnchroma/templates/example.template"))
+}
+
+const DEFAULT_CONFIG_CONTENT: &str = "[vars]\nradius = \"12\"\naccent = \"#3a3a3a\"\n\n[[templates]]\nname = \"example\"\ntemplate = \"~/.config/bnchroma/templates/example.template\"\noutput = \"/tmp/bnchroma-example.output\"\n";
+
+const DEFAULT_EXAMPLE_TEMPLATE: &str = include_str!("../assets/example.template");
+
+fn write_if_missing(path: &PathBuf, content: &str) -> Result<bool> {
+    if path.exists() {
+        println!("Already exists, skipping: {}", path.display());
+        return Ok(false);
+    }
+    if let Some(parent) = path.parent() {
+        fs::create_dir_all(parent)
+            .with_context(|| format!("Failed to create directory: {}", parent.display()))?;
+    }
+    fs::write(path, content)
+        .with_context(|| format!("Failed to write file: {}", path.display()))?;
+    println!("Created: {}", path.display());
+    Ok(true)
+}
+
+pub fn init_default_config() -> Result<()> {
+    let config_path = get_default_config_path()?;
+    let template_path = default_template_path()?;
+    write_if_missing(&config_path, DEFAULT_CONFIG_CONTENT)?;
+    write_if_missing(&template_path, DEFAULT_EXAMPLE_TEMPLATE)?;
+    Ok(())
+}
+
 pub fn load_config(path: &str) -> Result<Config> {
     let content = fs::read_to_string(path)
         .with_context(|| format!("Failed to read config file: {}", path))?;

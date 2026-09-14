@@ -1,0 +1,257 @@
+{{var.radius}}
+{{var.accent}}
+{{var.accent.rgb}}
+rgba({{var.accent.rgb}}, 0.9)
+
+{{col.1.hex}}
+{{col.2.hex}}
+{{col.3.hex}}
+{{col.4.hex}}
+{{col.5.hex}}
+{{col.6.hex}}
+{{col.7.hex}}
+{{col.8.hex}}
+{{col.9.hex}}
+{{col.10.hex}}
+{{col.11.hex}}
+{{col.12.hex}}
+{{col.13.hex}}
+{{col.14.hex}}
+{{col.15.hex}}
+{{col.16.hex}}
+
+{{col.1.hex | strip}}
+{{col.2.hex | strip}}
+{{col.3.hex | strip}}
+{{col.4.hex | strip}}
+{{col.5.hex | strip}}
+{{col.6.hex | strip}}
+{{col.7.hex | strip}}
+{{col.8.hex | strip}}
+{{col.9.hex | strip}}
+{{col.10.hex | strip}}
+{{col.11.hex | strip}}
+{{col.12.hex | strip}}
+{{col.13.hex | strip}}
+{{col.14.hex | strip}}
+{{col.15.hex | strip}}
+{{col.16.hex | strip}}
+
+{{col.1.rgb}}
+{{col.2.rgb}}
+{{col.3.rgb}}
+{{col.4.rgb}}
+{{col.5.rgb}}
+{{col.6.rgb}}
+{{col.7.rgb}}
+{{col.8.rgb}}
+{{col.9.rgb}}
+{{col.10.rgb}}
+{{col.11.rgb}}
+{{col.12.rgb}}
+{{col.13.rgb}}
+{{col.14.rgb}}
+{{col.15.rgb}}
+{{col.16.rgb}}
+
+{{col.1.rgb | strip}}
+{{col.2.rgb | strip}}
+{{col.3.rgb | strip}}
+{{col.4.rgb | strip}}
+{{col.5.rgb | strip}}
+{{col.6.rgb | strip}}
+{{col.7.rgb | strip}}
+{{col.8.rgb | strip}}
+{{col.9.rgb | strip}}
+{{col.10.rgb | strip}}
+{{col.11.rgb | strip}}
+{{col.12.rgb | strip}}
+{{col.13.rgb | strip}}
+{{col.14.rgb | strip}}
+{{col.15.rgb | strip}}
+{{col.16.rgb | strip}}
+
+{{col.1.hsl}}
+{{col.2.hsl}}
+{{col.3.hsl}}
+{{col.4.hsl}}
+{{col.5.hsl}}
+{{col.6.hsl}}
+{{col.7.hsl}}
+{{col.8.hsl}}
+{{col.9.hsl}}
+{{col.10.hsl}}
+{{col.11.hsl}}
+{{col.12.hsl}}
+{{col.13.hsl}}
+{{col.14.hsl}}
+{{col.15.hsl}}
+{{col.16.hsl}}
+
+{{col.1.hsl | strip}}
+{{col.2.hsl | strip}}
+{{col.3.hsl | strip}}
+{{col.4.hsl | strip}}
+{{col.5.hsl | strip}}
+{{col.6.hsl | strip}}
+{{col.7.hsl | strip}}
+{{col.8.hsl | strip}}
+{{col.9.hsl | strip}}
+{{col.10.hsl | strip}}
+{{col.11.hsl | strip}}
+{{col.12.hsl | strip}}
+{{col.13.hsl | strip}}
+{{col.14.hsl | strip}}
+{{col.15.hsl | strip}}
+{{col.16.hsl | strip}}
+
+{{col.1.rgba | alpha:0.5}}
+{{col.2.rgba | alpha:0.5}}
+{{col.3.rgba | alpha:0.5}}
+{{col.4.rgba | alpha:0.5}}
+{{col.5.rgba | alpha:0.5}}
+{{col.6.rgba | alpha:0.5}}
+{{col.7.rgba | alpha:0.5}}
+{{col.8.rgba | alpha:0.5}}
+{{col.9.rgba | alpha:0.5}}
+{{col.10.rgba | alpha:0.5}}
+{{col.11.rgba | alpha:0.5}}
+{{col.12.rgba | alpha:0.5}}
+{{col.13.rgba | alpha:0.5}}
+{{col.14.rgba | alpha:0.5}}
+{{col.15.rgba | alpha:0.5}}
+{{col.16.rgba | alpha:0.5}}
+
+{{col.1.rgba | alpha:0.8 | strip}}
+{{col.2.rgba | alpha:0.8 | strip}}
+{{col.3.rgba | alpha:0.8 | strip}}
+{{col.4.rgba | alpha:0.8 | strip}}
+{{col.5.rgba | alpha:0.8 | strip}}
+{{col.6.rgba | alpha:0.8 | strip}}
+{{col.7.rgba | alpha:0.8 | strip}}
+{{col.8.rgba | alpha:0.8 | strip}}
+{{col.9.rgba | alpha:0.8 | strip}}
+{{col.10.rgba | alpha:0.8 | strip}}
+{{col.11.rgba | alpha:0.8 | strip}}
+{{col.12.rgba | alpha:0.8 | strip}}
+{{col.13.rgba | alpha:0.8 | strip}}
+{{col.14.rgba | alpha:0.8 | strip}}
+{{col.15.rgba | alpha:0.8 | strip}}
+{{col.16.rgba | alpha:0.8 | strip}}
+
+{{col.1.hex | invert}}
+{{col.2.hex | invert}}
+{{col.3.hex | invert}}
+{{col.4.hex | invert}}
+{{col.5.hex | invert}}
+{{col.6.hex | invert}}
+{{col.7.hex | invert}}
+{{col.8.hex | invert}}
+{{col.9.hex | invert}}
+{{col.10.hex | invert}}
+{{col.11.hex | invert}}
+{{col.12.hex | invert}}
+{{col.13.hex | invert}}
+{{col.14.hex | invert}}
+{{col.15.hex | invert}}
+{{col.16.hex | invert}}
+
+{{col.1.rgb | invert}}
+{{col.2.rgb | invert}}
+{{col.3.rgb | invert}}
+{{col.4.rgb | invert}}
+{{col.5.rgb | invert}}
+{{col.6.rgb | invert}}
+{{col.7.rgb | invert}}
+{{col.8.rgb | invert}}
+{{col.9.rgb | invert}}
+{{col.10.rgb | invert}}
+{{col.11.rgb | invert}}
+{{col.12.rgb | invert}}
+{{col.13.rgb | invert}}
+{{col.14.rgb | invert}}
+{{col.15.rgb | invert}}
+{{col.16.rgb | invert}}
+
+{{col.1.hsl | invert}}
+{{col.2.hsl | invert}}
+{{col.3.hsl | invert}}
+{{col.4.hsl | invert}}
+{{col.5.hsl | invert}}
+{{col.6.hsl | invert}}
+{{col.7.hsl | invert}}
+{{col.8.hsl | invert}}
+{{col.9.hsl | invert}}
+{{col.10.hsl | invert}}
+{{col.11.hsl | invert}}
+{{col.12.hsl | invert}}
+{{col.13.hsl | invert}}
+{{col.14.hsl | invert}}
+{{col.15.hsl | invert}}
+{{col.16.hsl | invert}}
+
+{{col.1.hex | invert | strip}}
+{{col.2.hex | invert | strip}}
+{{col.3.hex | invert | strip}}
+{{col.4.hex | invert | strip}}
+{{col.5.hex | invert | strip}}
+{{col.6.hex | invert | strip}}
+{{col.7.hex | invert | strip}}
+{{col.8.hex | invert | strip}}
+{{col.9.hex | invert | strip}}
+{{col.10.hex | invert | strip}}
+{{col.11.hex | invert | strip}}
+{{col.12.hex | invert | strip}}
+{{col.13.hex | invert | strip}}
+{{col.14.hex | invert | strip}}
+{{col.15.hex | invert | strip}}
+{{col.16.hex | invert | strip}}
+
+{{col.1.rgba | alpha:0.7 | invert}}
+{{col.2.rgba | alpha:0.7 | invert}}
+{{col.3.rgba | alpha:0.7 | invert}}
+{{col.4.rgba | alpha:0.7 | invert}}
+{{col.5.rgba | alpha:0.7 | invert}}
+{{col.6.rgba | alpha:0.7 | invert}}
+{{col.7.rgba | alpha:0.7 | invert}}
+{{col.8.rgba | alpha:0.7 | invert}}
+{{col.9.rgba | alpha:0.7 | invert}}
+{{col.10.rgba | alpha:0.7 | invert}}
+{{col.11.rgba | alpha:0.7 | invert}}
+{{col.12.rgba | alpha:0.7 | invert}}
+{{col.13.rgba | alpha:0.7 | invert}}
+{{col.14.rgba | alpha:0.7 | invert}}
+{{col.15.rgba | alpha:0.7 | invert}}
+{{col.16.rgba | alpha:0.7 | invert}}
+
+{{col.1.rgba | alpha:0.3 | invert | strip}}
+{{col.2.rgba | alpha:0.3 | invert | strip}}
+{{col.3.rgba | alpha:0.3 | invert | strip}}
+{{col.4.rgba | alpha:0.3 | invert | strip}}
+{{col.5.rgba | alpha:0.3 | invert | strip}}
+{{col.6.rgba | alpha:0.3 | invert | strip}}
+{{col.7.rgba | alpha:0.3 | invert | strip}}
+{{col.8.rgba | alpha:0.3 | invert | strip}}
+{{col.9.rgba | alpha:0.3 | invert | strip}}
+{{col.10.rgba | alpha:0.3 | invert | strip}}
+{{col.11.rgba | alpha:0.3 | invert | strip}}
+{{col.12.rgba | alpha:0.3 | invert | strip}}
+{{col.13.rgba | alpha:0.3 | invert | strip}}
+{{col.14.rgba | alpha:0.3 | invert | strip}}
+{{col.15.rgba | alpha:0.3 | invert | strip}}
+{{col.16.rgba | alpha:0.3 | invert | strip}}
+
+{{col.source.hex}}
+{{col.source.hex | strip}}
+{{col.source.rgb}}
+{{col.source.rgb | strip}}
+{{col.source.hsl}}
+{{col.source.hsl | strip}}
+{{col.source.rgba | alpha:0.9}}
+{{col.source.rgba | alpha:0.9 | strip}}
+{{col.source.hex | invert}}
+{{col.source.rgb | invert}}
+{{col.source.hsl | invert}}
+{{col.source.hex | invert | strip}}
+{{col.source.rgba | alpha:0.6 | invert}}
+{{col.source.rgba | alpha:0.6 | invert | strip}}

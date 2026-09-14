@@ -48,10 +48,16 @@ struct Args {
     /// Comma-separated name=hex pairs matched against --color
     #[arg(long = "match", value_name = "LIST")]
     match_list: Option<String>,
+
+    #[arg(long)]
+    init: bool,
 }
 
 fn main() -> Result<()> {
     let a = Args::parse();
+    if a.init {
+        return fade::init_default_config();
+    }
     if a.match_list.is_some() {
         return run_match(a);
     }
@@ -96,13 +102,23 @@ fn run_sync(a: Args) -> Result<()> {
     let (gradient, source) =
         fade::ensure_fade_colors(&hex_clean, a.min_lightness, a.max_lightness)?;
 
+    let is_default_config = a.config.is_none();
     let config_path = match a.config {
         Some(p) => p,
         None => fade::get_default_config_path()?
             .to_string_lossy()
             .into_owned(),
     };
-    let cfg = fade::load_config(&config_path).context("Failed to load config")?;
+    let cfg = fade::load_config(&config_path).with_context(|| {
+        if is_default_config {
+            format!(
+                "Failed to load config ({}). Run `bnchroma --init` to create a default config",
+                config_path
+            )
+        } else {
+            format!("Failed to load config ({})", config_path)
+        }
+    })?;
     let ctx = fade::RenderCtx::new(&cfg.vars).context("Failed to resolve variables")?;
 
     fade::render_templates(&cfg.templates, &gradient, source, &ctx, a.quiet)

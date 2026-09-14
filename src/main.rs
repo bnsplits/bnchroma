@@ -49,6 +49,7 @@ struct Args {
     #[arg(long = "match", value_name = "LIST")]
     match_list: Option<String>,
 
+    /// Create default config and example template
     #[arg(long)]
     init: bool,
 }

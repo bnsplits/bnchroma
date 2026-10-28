@@ -78,11 +78,6 @@ fn run_match(a: Args) -> Result<()> {
 }
 
 fn run_sync(a: Args) -> Result<()> {
-    let path = a.path.clone().context("--path is required")?;
-    let pick_base = pick::default_base_dir()?;
-
-    let colors = pick::ensure_pick_colors(&path, a.force, &pick_base)?;
-
     let source_hex = match &a.color {
         Some(c) => {
             let clean = c.trim_start_matches('#');
@@ -90,6 +85,10 @@ fn run_sync(a: Args) -> Result<()> {
             format!("#{}", clean)
         }
         None => {
+            let path = a.path.clone().context("--path is required")?;
+            let pick_base = pick::default_base_dir()?;
+            let colors = pick::ensure_pick_colors(&path, a.force, &pick_base)?;
+
             let idx = a
                 .color_index
                 .saturating_sub(1)

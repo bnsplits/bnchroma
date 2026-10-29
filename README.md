@@ -35,7 +35,7 @@ Picks the palette, builds the gradient from its first color, and renders every t
 
 ```sh
 bnchroma --path wall.jpg --color-index 2 --quiet   # gradient from palette color 2
-bnchroma --path wall.jpg --color "#7b5244" --quiet # gradient from this color instead
+bnchroma --color "#7b5244" --quiet                 # gradient from this color instead
 bnchroma --path wall.jpg --force                   # ignore the cached palette
 ```
 
